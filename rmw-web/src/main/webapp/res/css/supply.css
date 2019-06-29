@@ -1,0 +1,20 @@
+.supply{ width:1200px; height: 350px; margin: 10px auto 0; background: url(../img/supply.jpg);}
+.supply .form{ margin: 80px 0 0 413px; display: inline-block; }
+.supply .form textarea{ width: 440px; height: 138px; padding: 10px; resize: none; border: 0;}
+.supply .form button{ width: 150px;  margin: 15px 0 0 145px;}
+.supply .form button:hover{ opacity: 1;}
+
+.select_list{ width: 1200px; margin: 20px auto 0;}
+.select_list h2{ margin-bottom: 20px;  background: #f8f8f8; padding: 10px 20px;}
+.select_list h2 p{ display: inline-block; line-height: 38px; color: #e6e6e6; }
+.select_list h2 p span{ font-size: 14px; margin: 0 40px; color: #666;  text-align: center; cursor: pointer;}
+.select_list h2 p span i{ display: inline-block; width: 5px; color: #FF5722; font-weight: bold; font-size: 15px; margin-right: 3px; vertical-align: top;}
+.select_list h2 a{ float: right;}
+.select_list .table{ width: 100%; }
+.select_list .table thead{ background: #f8f8f8; line-height: 40px; color: #333; border-top: 1px solid #F2F2F2; border-bottom: 1px solid #F2F2F2;}
+.select_list .table tbody{ text-align: center; line-height: 60px; color: #333; }
+.select_list .table tbody tr{border-bottom: 1px solid #F2F2F2;}
+.select_list .table tbody tr:hover{ background: #f8f8f8;}
+
+.select_list form{ display: inline-block; font-size: 14px; margin-left: 50px;}
+.select_list form input{ display: inline-block; margin: 0 10px; width: 120px;}

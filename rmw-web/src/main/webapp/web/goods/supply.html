@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>求供应</title>
+		<link rel="stylesheet" type="text/css" href="../../res/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../../res/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../res/css/supply.css"/>
+		<script src="../../res/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="top_bg">
+			<div class="top">
+				<div class="left">
+					<ul>
+						<li>您好，欢迎来到乳买网！</li>
+						<li><a href="">登录</a></li>
+						<li><a href="">注册</a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul>
+						<li><a href="">帮助中心</a></li>
+						<li><a href="">关于我们</a></li>
+						<li>客服热线：<span>13822101272</span></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="nav_bg">
+			<div class="nav">
+				<div class="logo">
+					<img src="../../res/img/logo.png" ><!-- 焦糖奶茶字体 -->
+				</div>
+				<!--<div class="nav_list">
+					<ul>
+						<li><a href="">首页</a></li>
+						<li><a class="active" href="">搜现货</a></li>
+						<li><a href="">求供应</a></li>
+						<li><a href="">找物流</a></li>
+						<a class="layui-btn layui-btn-normal" href="">登录</a>
+						<a class="layui-btn layui-btn-primary" href="">注册</a>
+					</ul>
+				</div>-->
+				
+				<div class="layui-tab layui-tab-brief nav_search">
+				  <ul class="layui-tab-title">
+				    <li class="layui-this">现货</li>
+				    <li>求购</li>
+				  </ul>
+				  <div class="layui-tab-content">
+				    <div class="layui-tab-item layui-show"><form class="layui-form" action=""><input type="" name="goods_in_stock_search" id="a1" value="" placeholder="请输入名称/品种/型号进行搜索" /><button class="layui-btn layui-btn-normal" lay-submit lay-filter="goods_in_stock_search">搜索</button></form></div>
+				    <div class="layui-tab-item"><form class="layui-form" action=""><input type="" name="want_to_buy_search" id="" value="" placeholder="请输入名称/品种/型号进行搜索" /><button class="layui-btn layui-btn-normal" lay-submit lay-filter="want_to_buy_search">搜索</button></form></div>
+				  </div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="nav_menu_bg">
+			<div class="nav_menu">
+				<ul>
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="goods_in_stock.html">搜现货</a></li>
+					<li class="active"><a href="supply.html">求供应</a></li>
+					<li><a href="javascript:;">找物流</a></li>
+					<li><a href="javascript:;">金融</a></li>
+					<li><a href="javascript:;">资讯</a></li>
+					<li><a href="javascript:;">价格走势</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="supply">
+			<div class="form">
+				<form class="layui-form" action="">
+				<textarea class="" name="supply" rows="" cols="" placeholder="写下您的真实需求，包括品种、品牌等，收到后我们会立即给您回电确认，剩下的就交给我们吧。"></textarea><br />
+				<button class="layui-btn layui-btn-danger" lay-submit lay-filter="supply">帮我找</button>
+				</form>
+			</div>
+		</div>
+		
+		<div class="select_list">
+			<h2>
+				<p><span><i>↑</i>发布日期</span>|<span><i></i>数量</span>|<span><i></i>价格</span>
+					<form class="layui-form" action="">
+						品种：<input class="layui-input" name="varieties" type="text" />品牌：<input class="layui-input" name="brand" type="text" /><button class="layui-btn layui-btn-normal" lay-submit lay-filter="select_search">搜索</button><button type="reset" class="layui-btn layui-btn-primary">清空</button>
+					</form>
+				</p>
+			<a class="layui-btn layui-btn-warm" href="publish_purchase_message.html">发布求购信息</a><div class="clear"></div></h2>
+			<table class="table">
+			  <!--<colgroup>
+			    <col width="150">
+			    <col width="200">
+			    <col>
+			  </colgroup>-->
+			  <thead>
+			    <tr>
+			      <th>细分品种</th>
+			      <th>品牌</th>
+			      <th>产地</th>
+			      <th>交割仓库地</th>
+			      <th>求购数量</th>
+			      <th>生产日期</th>
+			      <th>价格</th>
+			      <th>交易员</th>
+			      <th>发布日期</th>
+			    </tr> 
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td>全脂奶粉-速溶</td>
+			      <td>品牌</td>
+			      <td>中国-北京</td>
+			      <td>北京</td>
+			      <td>999</td>
+			      <td>2018-08-17</td>
+			      <td class="red">￥9999</td>
+			      <td>交易员</td>
+			      <td>2018-08-17 18:04</td>
+			    </tr>
+			    <tr>
+			      <td>全脂奶粉-速溶</td>
+			      <td>品牌</td>
+			      <td>中国-北京</td>
+			      <td>北京</td>
+			      <td>999</td>
+			      <td>2018-08-17</td>
+			      <td class="red">￥9999</td>
+			      <td>交易员</td>
+			      <td>2018-08-17 18:04</td>
+			    </tr>
+			    <tr>
+			      <td>全脂奶粉-速溶</td>
+			      <td>品牌</td>
+			      <td>中国-北京</td>
+			      <td>北京</td>
+			      <td>999</td>
+			      <td>2018-08-17</td>
+			      <td class="red">￥9999</td>
+			      <td>交易员</td>
+			      <td>2018-08-17 18:04</td>
+			    </tr>
+			    <tr>
+			      <td>全脂奶粉-速溶</td>
+			      <td>品牌</td>
+			      <td>中国-北京</td>
+			      <td>北京</td>
+			      <td>999</td>
+			      <td>2018-08-17</td>
+			      <td class="red">￥9999</td>
+			      <td>交易员</td>
+			      <td>2018-08-17 18:04</td>
+			    </tr>
+			    <tr>
+			      <td>全脂奶粉-速溶</td>
+			      <td>品牌</td>
+			      <td>中国-北京</td>
+			      <td>北京</td>
+			      <td>999</td>
+			      <td>2018-08-17</td>
+			      <td class="red">￥9999</td>
+			      <td>交易员</td>
+			      <td>2018-08-17 18:04</td>
+			    </tr>
+			    <tr>
+			      <td>全脂奶粉-速溶</td>
+			      <td>品牌</td>
+			      <td>中国-北京</td>
+			      <td>北京</td>
+			      <td>999</td>
+			      <td>2018-08-17</td>
+			      <td class="red">￥9999</td>
+			      <td>交易员</td>
+			      <td>2018-08-17 18:04</td>
+			    </tr>
+			    <tr>
+			      <td>全脂奶粉-速溶</td>
+			      <td>品牌</td>
+			      <td>中国-北京</td>
+			      <td>北京</td>
+			      <td>999</td>
+			      <td>2018-08-17</td>
+			      <td class="red">￥9999</td>
+			      <td>交易员</td>
+			      <td>2018-08-17 18:04</td>
+			    </tr>
+			    <tr>
+			      <td>全脂奶粉-速溶</td>
+			      <td>品牌</td>
+			      <td>中国-北京</td>
+			      <td>北京</td>
+			      <td>999</td>
+			      <td>2018-08-17</td>
+			      <td class="red">￥9999</td>
+			      <td>交易员</td>
+			      <td>2018-08-17 18:04</td>
+			    </tr>
+			    <tr>
+			      <td>全脂奶粉-速溶</td>
+			      <td>品牌</td>
+			      <td>中国-北京</td>
+			      <td>北京</td>
+			      <td>999</td>
+			      <td>2018-08-17</td>
+			      <td class="red">￥9999</td>
+			      <td>交易员</td>
+			      <td>2018-08-17 18:04</td>
+			    </tr>
+			    <tr>
+			      <td>全脂奶粉-速溶</td>
+			      <td>品牌</td>
+			      <td>中国-北京</td>
+			      <td>北京</td>
+			      <td>999</td>
+			      <td>2018-08-17</td>
+			      <td class="red">￥9999</td>
+			      <td>交易员</td>
+			      <td>2018-08-17 18:04</td>
+			    </tr>
+			  </tbody>
+			</table>
+			<div id="page"></div>
+		</div>
+		
+		
+		<div class="serve_model">
+			<p>
+			<span><img src="../../res/img/matchmaking.png"/>免费撮合</span>
+			<span><img src="../../res/img/high_quality.png"/>优质货源</span>
+			<span><img src="../../res/img/service.png"/>全方位服务</span>
+			<span><img src="../../res/img/rich.png"/>品类丰富</span>
+			<span><img src="../../res/img/quality_goods.png"/>正品保障</span>
+			</p>
+		</div>
+		
+		<div class="footer">
+			<ul class="nav">
+				<li>我要买货
+					<ul>
+						<li><a href="javascript:;">免费注册</a></li>
+						<li><a href="javascript:;">现货比价</a></li>
+						<li><a href="javascript:;">低价求购</a></li>
+						<li><a href="javascript:;">直供专区</a></li>
+						<li><a href="javascript:;">订单帮助</a></li>
+					</ul>
+				</li>
+				<li>我要卖货
+					<ul>
+						<li><a href="javascript:;">成为供应商</a></li>
+						<li><a href="javascript:;">产品入驻</a></li>
+						<li><a href="javascript:;">发布产品</a></li>
+						<li><a href="javascript:;">求购报价</a></li>
+						<li><a href="javascript:;">匿名制规则</a></li>
+					</ul>
+				</li>
+				<li>交易安全
+					<ul>
+						<li><a href="javascript:;">供应商双重认证</a></li>
+						<li><a href="javascript:;">银行资金托管</a></li>
+						<li><a href="javascript:;">信息保障</a></li>
+						<li><a href="javascript:;">先行赔付</a></li>
+						<li><a href="javascript:;">售后服务</a></li>
+					</ul>
+				</li>
+				<li>关注微信服务号
+					<img class="qr" src="../../res/img/qrcode.png"/>
+				</li>
+				<li>
+					<em class="tel" ><img src="../../res/img/tel.png"/>13822101272</em>
+					<ul>
+						<li>工作时间：<span>周一至周六9:00-18:00</span></li>
+						<li>售后服务：<span>kefu@rumaiwang.com</span></li>
+						<li>产品入驻：<span>yunying@rumaiwang.com</span></li>
+						<li>建议投诉：<span>ceo@rumaiwang.com</span></li>
+					</ul>
+				</li>
+			</ul>
+			
+			<div class="link">
+				友情链接：<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+			</div>
+			
+		</div>
+		
+		<div class="copy_bg">
+			<div class="copy">
+				<p>
+					<a href="javascript:;">首页</a>丨
+					<a href="javascript:;">关于我们</a>丨
+					<a href="javascript:;">法律申明</a>丨
+					<a href="javascript:;">招贤纳士</a>丨
+					<a href="javascript:;">产品入驻</a>丨
+					<a href="javascript:;">公告咨询</a>丨
+					<a href="javascript:;">联系我们</a>
+				</p>
+				<p>&copy;2018 乳买网 rumaiwang.com 版权所以 豫ICP备18030548号</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		layui.use(['layer','laypage','element','form'], function(){ 
+			
+			 var $ = layui.$ //由于layer弹层依赖jQuery，所以可以直接得到
+			,layer = layui.layer
+			,laypage = layui.laypage
+			,element = layui.element
+			,form = layui.form
+			
+			//现货搜索
+			  form.on('submit(goods_in_stock_search)', function(data){
+			    layer.msg(JSON.stringify(data.field));
+			    return false;
+			  });
+			  
+  			//求购搜索	
+				form.on('submit(want_to_buy_search)', function(data){
+			    layer.msg(JSON.stringify(data.field));
+			    return false;
+			  });
+			
+			//帮我找	
+				form.on('submit(supply)', function(data){
+			    layer.msg(JSON.stringify(data.field));
+			    return false;
+			  });
+			  
+			//列表筛选	
+				form.on('submit(select_search)', function(data){
+			    layer.msg(JSON.stringify(data.field));
+			    return false;
+			  });
+			  
+			 //分页
+		  laypage.render({
+		    elem: 'page'
+    		,theme: '#1E9FFF'
+		    ,count: 100
+		    ,layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
+		    ,jump: function(obj,first){
+		    	
+		    	//首次不执行
+			    if(!first){
+			      layer.msg('当前页：'+obj.curr+'每页显示条数：'+obj.limit)
+			    }
+			    
+		    }
+		  });
+
+		 //列表排序
+		  $('.select_list h2 span').click(function(){
+		  	
+		  		var text = $(this).find('i')
+		  		if(text.text() == ''){
+		  			$('.select_list h2 span i').text('')
+		  			text.text('↑')
+		  			layer.msg($(this).text())
+		  			return
+		  		}
+		  		text.text() == '↑' ? text.text('↓') : text.text('↑')
+		  		layer.msg($(this).text())
+		  })
+		  
+		});
+	</script>
+</html>

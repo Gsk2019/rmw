@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>发布求购信息</title>
+		<link rel="stylesheet" type="text/css" href="../res/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../res/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../res/css/publish_purchase_message.css"/>
+		<script src="../res/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="top_bg">
+			<div class="top">
+				<div class="left">
+					<ul>
+						<li>您好，欢迎来到乳买网！</li>
+						<li><a href="">登录</a></li>
+						<li><a href="">注册</a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul>
+						<li><a href="">帮助中心</a></li>
+						<li><a href="">关于我们</a></li>
+						<li>客服热线：<span>13822101272</span></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="nav_bg">
+			<div class="nav">
+				<div class="logo">
+					<img src="../res/img/logo.png" ><!-- 焦糖奶茶字体 -->
+				</div>
+				<!--<div class="nav_list">
+					<ul>
+						<li><a href="">首页</a></li>
+						<li><a class="active" href="">搜现货</a></li>
+						<li><a href="">求供应</a></li>
+						<li><a href="">找物流</a></li>
+						<a class="layui-btn layui-btn-normal" href="">登录</a>
+						<a class="layui-btn layui-btn-primary" href="">注册</a>
+					</ul>
+				</div>-->
+				
+				<div class="layui-tab layui-tab-brief nav_search">
+				  <ul class="layui-tab-title">
+				    <li class="layui-this">现货</li>
+				    <li>求购</li>
+				  </ul>
+				  <div class="layui-tab-content">
+				    <div class="layui-tab-item layui-show"><form class="layui-form" action=""><input type="" name="goods_in_stock_search" id="a1" value="" placeholder="请输入名称/品种/型号进行搜索" /><button class="layui-btn layui-btn-normal" lay-submit lay-filter="goods_in_stock_search">搜索</button></form></div>
+				    <div class="layui-tab-item"><form class="layui-form" action=""><input type="" name="want_to_buy_search" id="" value="" placeholder="请输入名称/品种/型号进行搜索" /><button class="layui-btn layui-btn-normal" lay-submit lay-filter="want_to_buy_search">搜索</button></form></div>
+				  </div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="nav_menu_bg">
+			<div class="nav_menu">
+				<ul>
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="goods_in_stock.html">搜现货</a></li>
+					<li><a href="supply.html">求供应</a></li>
+					<li><a href="javascript:;">找物流</a></li>
+					<li><a href="javascript:;">金融</a></li>
+					<li><a href="javascript:;">资讯</a></li>
+					<li><a href="javascript:;">价格走势</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="publish_purchase_message_bg">
+			<div class="publish_purchase_message">
+				<div class="title">
+					<p>——————&emsp;&emsp;<span>发布求购信息</span>&emsp;&emsp;——————</p>
+				</div>
+				<div class="form">
+					<p class="path"><a href="supply.html">求供应</a>&gt;<span>发布求购信息</span></p>
+					<form class="layui-form" action="">
+						
+					<div class="layui-form-item">
+						<div class="layui-inline">
+						    <label class="layui-form-label">品种</label>
+						    <div class="layui-input-inline">
+						      <select name="varieties" lay-verify="required" lay-filter="varieties">
+						        <option value="">请选择品种</option>
+						        <option value="全脂奶粉">全脂奶粉</option>
+						        <option value="脱脂奶粉">脱脂奶粉</option>
+						        <option value="黄油">黄油</option>
+						        <option value="无水奶油">无水奶油</option>
+						        <option value="淡奶油">淡奶油</option>
+						        <option value="乳清蛋白粉">乳清蛋白粉</option>
+						        <option value="乳糖">乳糖</option>
+						        <option value="乳清粉">乳清粉</option>
+						        <option value="液态奶">液态奶</option>
+						      </select>
+						    </div>
+					    </div>
+					    
+			    	 	<div class="layui-inline">
+						    <div class="layui-input-inline varieties_1">
+						    	
+						    </div>
+					    </div>
+					   
+					    
+					</div>
+						
+					  <div class="layui-form-item">
+  					  	<div class="layui-inline">
+						    <label class="layui-form-label">品牌</label>
+						    <div class="layui-input-inline">
+						      <input type="text" name="brand" lay-verify="required" placeholder="请输入品牌" autocomplete="off" class="layui-input">
+						    </div>
+					    </div>
+					  </div>
+					  
+					  <div class="layui-form-item">
+						<div class="layui-inline">
+						    <label class="layui-form-label">产地</label>
+						    <div class="layui-input-inline">
+						      <select name="place_of_origin" lay-verify="required" lay-filter="place_of_origin">
+						        <option value="">请选择产地</option>
+						        <option value="中国">中国</option>
+						        <option value="澳洲">澳洲</option>
+						        <option value="欧洲">欧洲</option>
+						        <option value="北美洲">北美洲</option>
+						        <option value="南美洲">南美洲</option>
+						      </select>
+						    </div>
+					    </div>
+					    
+					    <div class="layui-inline">
+						    <div class="layui-input-inline place_of_origin_1">
+						    	
+						    </div>
+					    </div>
+					    
+					</div>
+						
+					<div class="layui-form-item">
+						<div class="layui-inline">
+						    <label class="layui-form-label">交割仓库地</label>
+						    <div class="layui-input-inline">
+						      <select name="delivery_warehouse_site" lay-verify="required">
+						        <option value="">请选择交割仓库地</option>
+						        <option value="不限">不限</option>
+						        <option value="北京">北京</option>
+						        <option value="上海">上海</option>
+						        <option value="广州">广州</option>
+						        <option value="厦门">厦门</option>
+						        <option value="天津">天津</option>
+						      </select>
+						    </div>
+					    </div>
+					</div>
+						
+						
+					  <div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">求购数量</label>
+					      <div class="layui-input-inline">
+					        <input type="number" name="purchase_quantity" placeholder="请输入数量" lay-verify="required" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					  </div>
+					  
+					  <div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">价格</label>
+					      <div class="layui-input-inline" style="width: 100px;">
+					        <input type="text" name="price_min" lay-verify="required" placeholder="￥" autocomplete="off" class="layui-input">
+					      </div>
+					      <div class="layui-form-mid">-</div>
+					      <div class="layui-input-inline" style="width: 100px;">
+					        <input type="text" name="price_max" lay-verify="required" placeholder="￥" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					  </div>
+					  
+					  <div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">生产日期</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="date_of_manufacture" lay-verify="required" id="date_of_manufacture" lay-verify="date_of_manufacture" placeholder="请选择生产日期" autocomplete="off" class="layui-input" lay-key="1">
+					      </div>
+					    </div>
+  					  </div>
+  					  
+					  <div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">有效期</label>
+					      <div class="layui-input-inline">
+					        <input type="text" name="term_of_validity" lay-verify="required" id="term_of_validity" lay-verify="term_of_validity" placeholder="请选择有效期" autocomplete="off" class="layui-input" lay-key="2">
+					      </div>
+					    </div>
+  					  </div>
+  					  
+  					  <div class="layui-form-item">
+  					  	<div class="layui-inline">
+						    <label class="layui-form-label">联系人</label>
+						    <div class="layui-input-inline">
+						      <input type="text" name="contacts" lay-verify="required" placeholder="请输入联系人" autocomplete="off" class="layui-input">
+						    </div>
+					    </div>
+					  </div>
+  						
+					  <div class="layui-form-item">
+					    <div class="layui-inline">
+					      <label class="layui-form-label">电话</label>
+					      <div class="layui-input-inline">
+					        <input type="tel" name="telephone" lay-verify="required|phone" placeholder="请输入电话" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					  </div>
+					  
+					  <div class="layui-form-item layui-form-text">
+					    <label class="layui-form-label">备注</label>
+					    <div class="layui-input-block">
+					      <textarea name="remarks" placeholder="请输入备注" class="layui-textarea"></textarea>
+					    </div>
+					  </div>
+					  
+					  <div class="layui-form-item">
+					    <div class="layui-input-block">
+					      <button class="layui-btn layui-btn-normal" lay-submit lay-filter="buy_and_buy">立即发布</button>
+					      <button type="reset" class="layui-btn layui-btn-primary" id="reset">重置</button>
+					    </div>
+					  </div>
+					  
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<div class="serve_model">
+			<p>
+			<span><img src="../res/img/matchmaking.png"/>免费撮合</span>
+			<span><img src="../res/img/high_quality.png"/>优质货源</span>
+			<span><img src="../res/img/service.png"/>全方位服务</span>
+			<span><img src="../res/img/rich.png"/>品类丰富</span>
+			<span><img src="../res/img/quality_goods.png"/>正品保障</span>
+			</p>
+		</div>
+		
+		<div class="footer">
+			<ul class="nav">
+				<li>我要买货
+					<ul>
+						<li><a href="javascript:;">免费注册</a></li>
+						<li><a href="javascript:;">现货比价</a></li>
+						<li><a href="javascript:;">低价求购</a></li>
+						<li><a href="javascript:;">直供专区</a></li>
+						<li><a href="javascript:;">订单帮助</a></li>
+					</ul>
+				</li>
+				<li>我要卖货
+					<ul>
+						<li><a href="javascript:;">成为供应商</a></li>
+						<li><a href="javascript:;">产品入驻</a></li>
+						<li><a href="javascript:;">发布产品</a></li>
+						<li><a href="javascript:;">求购报价</a></li>
+						<li><a href="javascript:;">匿名制规则</a></li>
+					</ul>
+				</li>
+				<li>交易安全
+					<ul>
+						<li><a href="javascript:;">供应商双重认证</a></li>
+						<li><a href="javascript:;">银行资金托管</a></li>
+						<li><a href="javascript:;">信息保障</a></li>
+						<li><a href="javascript:;">先行赔付</a></li>
+						<li><a href="javascript:;">售后服务</a></li>
+					</ul>
+				</li>
+				<li>关注微信服务号
+					<img class="qr" src="../res/img/qrcode.png"/>
+				</li>
+				<li>
+					<em class="tel" ><img src="../res/img/tel.png"/>13822101272</em>
+					<ul>
+						<li>工作时间：<span>周一至周六9:00-18:00</span></li>
+						<li>售后服务：<span>kefu@rumaiwang.com</span></li>
+						<li>产品入驻：<span>yunying@rumaiwang.com</span></li>
+						<li>建议投诉：<span>ceo@rumaiwang.com</span></li>
+					</ul>
+				</li>
+			</ul>
+			
+			<div class="link">
+				友情链接：<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+				<a href="javasrcipt:;">乳买网</a>
+			</div>
+			
+		</div>
+		
+		<div class="copy_bg">
+			<div class="copy">
+				<p>
+					<a href="javascript:;">首页</a>丨
+					<a href="javascript:;">关于我们</a>丨
+					<a href="javascript:;">法律申明</a>丨
+					<a href="javascript:;">招贤纳士</a>丨
+					<a href="javascript:;">产品入驻</a>丨
+					<a href="javascript:;">公告咨询</a>丨
+					<a href="javascript:;">联系我们</a>
+				</p>
+				<p>&copy;2018 乳买网 rumaiwang.com 版权所以 豫ICP备18030548号</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		layui.use(['layer','element','form','laydate'], function(){ 
+			
+			 var $ = layui.$ //由于layer弹层依赖jQuery，所以可以直接得到
+			,layer = layui.layer
+			,element = layui.element
+			,form = layui.form
+			,laydate = layui.laydate
+			
+			//现货搜索
+			  form.on('submit(goods_in_stock_search)', function(data){
+			    layer.msg(JSON.stringify(data.field));
+			    return false;
+			  });
+			  
+  			//求购搜索	
+				form.on('submit(want_to_buy_search)', function(data){
+			    layer.msg(JSON.stringify(data.field));
+			    return false;
+			  });
+			  
+				
+			//品种联动
+			 form.on('select(varieties)', function(data){
+			 	
+			 	var arr = new Array()
+			 	arr['全脂奶粉'] = ['普通','热稳','速溶']
+			 	arr['黄油'] = ['含盐','无盐']
+			 	arr['乳清蛋白粉'] = ['wpc34','wpc60','wpc70','wpc80']
+			 	arr['乳糖'] = ['40目','100目','200目']
+			 	arr['乳清粉'] = ['高蛋白乳清粉','中蛋白乳清粉','低蛋白乳清粉','D40','D45','D50','D60','D70','D90']
+			 	arr['液态奶'] = ['全脂','脱脂']
+			 	
+			 	if(data.value!=' '&&arr[data.value]!==undefined){
+			 		$('.varieties_1').html(function (){
+		                	$(".varieties_1").html("<select name='varieties_1' lay-verify='required' class='varieties_1_select'></select>");
+					 		for (var i = 0; i<arr[data.value].length; i++) {
+					 			$('.varieties_1_select').append("<option value="+arr[data.value][i]+">"+arr[data.value][i]+"</option")
+					 		}
+			 		})
+			 	}else{
+			 		$('.varieties_1').html('')
+			 	}
+			 	
+                form.render('select');
+			 })
+			 
+			 //产地联动
+			 form.on('select(place_of_origin)', function(data){
+			 	
+			 	var arr = new Array()
+					
+			 	arr['中国'] = ['北京市','天津市','上海市','重庆市','河北省','山西省','辽宁省','吉林省','江苏省','浙江省','安徽省','福建省','江西省','山东省','河南省','湖北省','湖南省','广东省','海南省','四川省','贵州省','云南省','陕西省','甘肃省','青海省','台湾省','内蒙古自治区','广西壮族自治区','西藏自治区','宁夏回族自治区','新疆维吾尔自治区','香港特别行政区','澳门特别行政区']
+			 	arr['澳洲'] = ['澳大利亚','新西兰']
+			 	arr['欧洲'] = ['法国','德国','奥地利','比利时','波兰','丹麦','荷兰','瑞典','意大利','英国','智利']
+			 	arr['北美洲'] = ['加拿大','美国']
+			 	arr['南美洲'] = ['阿根廷']
+			 	
+			 	if(data.value!=' '&&arr[data.value]!==undefined){
+			 		$('.place_of_origin_1').html(function (){
+		                	$(".place_of_origin_1").html("<select name='place_of_origin_1' lay-verify='required' class='place_of_origin_1_select'></select>");
+					 		for (var i = 0; i<arr[data.value].length; i++) {
+					 			$('.place_of_origin_1_select').append("<option value="+arr[data.value][i]+">"+arr[data.value][i]+"</option")
+					 		}
+			 		})
+			 	}else{
+			 		$('.place_of_origin_1').html('')
+			 	}
+			 	
+                form.render('select');
+			 })
+			 
+			 
+			 //生产日期
+			  laydate.render({
+			    elem: '#date_of_manufacture' //指定元素
+			    ,theme: '#1E9FFF'
+			  });
+			  
+			 //有效期
+			  laydate.render({
+			    elem: '#term_of_validity' //指定元素
+			    ,theme: '#1E9FFF'
+			  });
+  
+			 //发布求购	
+				form.on('submit(buy_and_buy)', function(data){
+			    layer.msg(JSON.stringify(data.field));
+			    return false;
+			  });
+			  
+			  //重置清除二级联动数据
+			  $('#reset').click(function(){
+			  	$('.varieties_1').html('')
+		 		$('.place_of_origin_1').html('')
+			  })
+		  
+		});
+	</script>
+</html>
