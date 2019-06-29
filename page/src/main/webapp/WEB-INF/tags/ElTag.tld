@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+    <!-- 定义函数版本 -->
+    <tlib-version>1.0</tlib-version>
+    <!-- 定义函数名称 这个是随意的,但是最好和调用函数时定义一致-->
+    <short-name>el</short-name>
+    <!-- 定义第一个函数 -->
+    <!-- 上面基本是固定的格式,下面也是通用格式,根据自己需求更改内容-->
+    <function>
+        <!-- 定义第一个函数：reverse -->
+        <name>urlDecode</name>
+        <!-- 定义函数处理类 写类的全路径 -->
+        <function-class>mytag.ElTag</function-class>
+        <!-- 定义函数的对应方法 -->
+
+        <function-signature>
+            java.lang.String urlDecode(java.lang.String)
+        </function-signature>
+    </function>
+</taglib>
