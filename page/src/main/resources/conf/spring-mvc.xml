@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+              xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context-4.1.xsd
+						http://www.springframework.org/schema/mvc
+						http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd
+						http://www.springframework.org/schema/util        
+                     	http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+    
+<!--     <mvc:annotation-driven />  -->
+
+	<mvc:annotation-driven>
+		<mvc:message-converters>
+			<ref bean="fastJsonHttpMessageConverter"/>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+	<bean id="fastJsonHttpMessageConverter"  
+        class="org.cs.core.util.JsonHttpMessageConverter">  
+	<!-- <bean id="fastJsonHttpMessageConverter"  
+        class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">   -->
+        <property name="supportedMediaTypes">  
+            <list>  
+                <value>application/json;charset=UTF-8</value>  
+                <value>text/html;charset=UTF-8</value><!-- 避免IE出现下载JSON文件的情况 -->  
+            </list>  
+        </property>  
+        <property name="features">  
+        	<util:list>
+                <value>WriteMapNullValue</value>
+                <value>WriteNullStringAsEmpty</value>
+                <value>WriteNullNumberAsZero</value>
+                <value>WriteNullListAsEmpty</value>
+            </util:list>
+        </property>  
+    </bean>  
+	
+     <context:component-scan base-package="org.cs.*.ctl" /> 
+     <context:component-scan base-package="org.cs.*.*.ctl"/>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/rest/**"/>
+            <bean id="authCheckInteceptor" class="org.cs.ws.inteceptor.AuthCheckInteceptor"> </bean>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/mgr/**"/>
+            <bean id="sessionInterceptor" class="org.cs.mgr.util.SessionInterceptor">
+            	<property name="excludes">
+                    <list>
+                        <value>/login</value>
+                        <value>/mgr</value>
+                        <value>/rest</value>
+                        <value>/admin</value>
+                        <value>/tim</value>
+                        <value>/notify</value>
+                   </list>
+                </property>
+             </bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+    
+	<!--<bean id="conversionService"
+		class="org.springframework.context.support.ConversionServiceFactoryBean">
+		<property name="converters">
+			<set>
+				<bean class="org.cs.core.util.StringToEnumConverterFactory" />
+			</set>
+		</property>
+	</bean>
+
+
+	<mvc:annotation-driven conversion-service="conversionService" />  -->
+
+
+    <!-- SpringMVC上传文件时，需要配置MultipartResolver处理器 -->
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- 指定所上传文件的总大小不能超过2000KB。注意maxUploadSize属性的限制不是针对单个文件，而是所有文件的容量之和 -->
+        <property name="maxUploadSize" value="419430400"/>
+    </bean>
+
+    <!-- SpringMVC在超出上传文件限制时，会抛出org.springframework.web.multipart.MaxUploadSizeExceededException -->
+    <!-- 该异常是SpringMVC在检查上传的文件信息时抛出来的，而且此时还没有进入到Controller方法中 -->
+    <bean id="exceptionResolver"
+          class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <!-- 遇到MaxUploadSizeExceededException异常时，自动跳转到/WEB-INF/jsp/error_fileupload.jsp页面
+                <prop key="org.springframework.web.multipart.MaxUploadSizeExceededException">
+                    iface/error_fileupload
+                </prop>-->
+                <prop key="java.lang.Exception">common/error</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
