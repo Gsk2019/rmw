@@ -1,0 +1,29 @@
+.wrapper{ background: #f8f8f8;  padding-bottom: 1px;}
+.logistics_banner{ width: 1200px; margin: 10px auto; position:relative;}
+.logistics_banner .find_car{ position:absolute; left: 0; top: 0;  height: 280px; padding: 50px 50px 20px 0px; background: #00000020;}
+
+.find_car h4{ font-size: 16px; color: #fff; line-height: 35px; text-align: center;  margin-bottom: 10px;  margin-top: 10px;  padding-left: 50px;}
+.find_car form{ width: 250px; display: inline-block;  margin-left: 50px;}
+
+.release_logistics,.logistics_entrustment{ width: 1200px; margin: 20px auto;}
+
+.release_logistics>div,.logistics_entrustment>div{ display: inline-block;}
+.release_logistics .left,.logistics_entrustment .left{ width: 300px; height: 440px; position: relative;}
+.release_logistics .left h2,.logistics_entrustment .left h2{ color: #fff;}
+.release_logistics .left p,.logistics_entrustment .left p{ color: #fff; padding: 10px 20px; font-size: 16px;}
+.release_logistics .left em,.logistics_entrustment .left em{ padding: 15px;  font-style: normal; color: #fff; display: inline-block; text-align: left;}
+.release_logistics .left>div,.logistics_entrustment .left>div{ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#40000000,endColorstr=#40000000); position: absolute; width: 280px; height: 390px; text-align: center; padding-top: 50px; background: #00000040;}
+.release_logistics .right,.logistics_entrustment .right{ float:right;  width: 858px; padding: 20px; height: 400px; background: #fff; border: 1px solid #efefef;}
+.release_logistics .right h2,.logistics_entrustment .right h2{ padding-bottom: 15px; font-size: 16px; color: #1e9fff;}
+
+.topRec_List dl,.maquee{ width:100%; overflow:hidden; margin:0 auto; color:#7C7C7C}
+.topRec_List dd{ background:#f8f8f8; float:left; font-weight: bold; text-align:center; color:#666; width: 143px; line-height: 40px;}
+
+.maquee{ height:320px;}
+.topRec_List ul{ width:100%; height:360px;}
+.topRec_List li{ width:100%; height:45px; line-height:45px; text-align:center; font-size:14px; border-bottom: 1px dashed #aaa;}
+.topRec_List li div{ float:left; width: 143px; line-height: 40px;}
+
+#layui-laydate1 .layui-laydate-footer span:hover,#layui-laydate2 .layui-laydate-footer span:hover{ color:#1e9fff;}
+
+.issuing_logistics_quotes,.issuing_logistics_commission{ display: none; padding: 20px;text-align: center}

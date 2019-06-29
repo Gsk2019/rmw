@@ -1,0 +1,89 @@
+*{margin: 0; padding: 0;}
+ul,li{ list-style: none; }
+a{ text-decoration: none;}
+.clear{ clear: both;}
+.layui-btn-primary:hover{ border-color: #1E9FFF;}
+#block{ display: block;}
+.red{ color: #FF5722;}
+::placeholder{ color: #999;}
+
+.top_bg{ width: 100%; background: #f4f4f4;}
+.top{ width: 1200px; margin: 0 auto; line-height: 38px;}
+.top ul li{ display: inline-block;}
+.top ul li a{  font-size: 12px; color: #000;}
+.top ul li a:hover{ color: #1E9FFF;}
+.top .left{ display: inline-block;}
+.top .left ul li{ margin-right: 10px; font-size: 12px;}
+.top .right{ float: right;}
+.top .right ul li{ margin-left: 10px; font-size: 12px;}
+.top .right ul li span{ color: #1E9FFF;}
+
+.nav_bg{ width: 100%;}
+.nav{ width: 1200px; margin: 0 auto 20px; padding: 12px 0;}
+.nav .logo{ float: left; margin-top:5px}
+.nav .logo img{  height: 60px;}
+.nav .nav_list{ float: right;}
+.nav .nav_list ul li{ display: inline-block; line-height: 60px; margin: 0 20px;}
+.nav .nav_list ul li a{ font-size: 16px; color: #333;}
+.nav .nav_list ul li .active{ color: #1E9FFF;}
+
+.nav .nav_search{ display: inline-block; float: right; margin: 0;}
+.nav .nav_search .layui-tab-title { height: 30px;}
+.nav .nav_search .layui-tab-title li{ min-width: 45px; line-height: 30px; margin-right: 5px; padding: 0 5px; background: #f3f3f3;}
+.nav .nav_search .layui-tab-title .layui-this{ color: #fff; background: #1E9FFF;}
+.nav .nav_search .layui-tab-title .layui-this:after{ height: 31px; border-color:#1E9FFF;}
+.nav .nav_search .layui-tab-content{ padding: 0;}
+.nav .nav_search input{ border:2px solid #1E9FFF; width: 280px; vertical-align: top; height: 34px;  padding: 0 10px; color: #666;}
+.nav .nav_search button{ border-radius: 0;}
+
+.nav_menu_bg{ width: 100%; background: #393d49; height: 50px;}
+.nav_menu{ width: 1200px; margin: 0 auto;}
+.nav_menu ul li{ display: inline-block; line-height: 50px; font-size: 16px; width: 120px; text-align: center;}
+.nav_menu ul .active{ background: #1E9FFF;}
+.nav_menu ul .active a:hover{ color: #fff;}
+.nav_menu ul li a{ color: #fff;  display: inline-block; width: 100%; height: 100%;}
+.nav_menu ul li a:hover{ color: #1E9FFF;}
+
+.serve_model{ margin: 20px 0; padding: 20px 0; width: 100%; border-top: 1px solid #F3F3F3; border-bottom: 1px solid #F3F3F3;}
+.serve_model p{ width: 1200px; margin: 0 auto; text-align: center;}
+.serve_model p span{ display: inline-block; width: 220px; font-size: 18px; color: #666;  font-weight: bold;}
+.serve_model p span img{ width: 30px; margin-right: 10px;}
+
+.footer{ width: 1200px; margin: 0 auto;}
+.footer .nav li{ display: inline-block; font-size: 18px; color: #666; width: 235px; vertical-align: top; }
+.footer .nav li .qr{ width: 125px; margin-top: 10px;}
+.footer .nav li ul{ margin-top: 10px;}
+.footer .nav li ul li{  font-size: 14px; margin-top: 5px; color: #999;}
+.footer .nav li ul li a{ color: #666;}
+.footer .nav li ul li a:hover{ color: #1E9FFF;}
+.footer .nav li .tel{ font-style: normal; color: #1E9FFF;}
+.footer .nav li .tel img{ width: 30px; margin-left: 5px;}
+.footer .link{ border-top: 1px solid #f3f3f3; margin-top:20px; padding-top: 20px; display: none;}
+.footer .link a{ margin: 0 15px 15px 15px; display: inline-block; color: #666;}
+.footer .link a:hover{ color: #1E9FFF;}
+
+.copy_bg{ background: #f4f4f4;}
+.copy{ width: 1200px;  margin: 0 auto; padding: 10px 0; text-align: center;}
+.copy p{ line-height: 30px; color: #333;}
+.copy p a:hover{ color: #1E9FFF;}
+
+#page{ text-align: center; padding: 20px 0;}
+#page a:hover{ color: #1E9FFF;}
+#page input:focus,#page select:focus{ border-color:#1E9FFF!important;}
+
+.log_show{ color: #FF5722; text-decoration: underline;}
+.log_show:hover{ color: #FF5722;}
+
+.right_menu{ position: fixed; right: 20px; top: 50%;}
+.right_menu ul { width: 50px;}
+.right_menu ul li{ display: inline-block; width: 60px; background: #fff; height: 60px; border: 1px solid #EFEFEF; margin-top: 5px; position: relative;}
+.right_menu ul li div{ display: none; position: absolute; right: 61px; padding: 10px; background: #fff; border: 1px solid #EFEFEF; width: 170px; color: #666;}
+.right_menu ul li div .mb-20{ margin-bottom: 20px;}
+.right_menu ul li div .center{ text-align: center; }
+.right_menu ul li div .center b{line-height: 40px;}
+.right_menu ul li div p{ display: block;}
+.right_menu ul li span{ display: inline-block; width: 60px; height: 60px; text-align: center; line-height:60px;}
+.right_menu ul li span img{ width: 40px;}
+.right_menu ul li em{ display: none; background: #1E9FFF; font-size: 16px; width: 60px; padding-top: 10px; height: 50px; font-style: normal; text-align: center; line-height: 20px; color: #fff;}
+.right_menu ul li button{ margin: 10px auto;}
+

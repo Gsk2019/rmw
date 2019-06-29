@@ -1,0 +1,38 @@
+.supply{ width:1200px; height: 350px; margin: 10px auto 0; background: url(../img/supply.jpg);}
+.supply .form{ margin: 80px 0 0 413px; display: inline-block; }
+.supply .form textarea{ width: 440px; height: 138px; padding: 10px; resize: none; border: 0;}
+.supply .form button{ width: 150px;  margin: 15px 0 0 145px;}
+.supply .form button:hover{ opacity: 1;}
+
+.select_list{ width: 1200px; margin: 20px auto 0;}
+.select_list h2{ margin-bottom: 20px;  background: #f8f8f8; padding: 10px 20px;}
+.select_list h2 p{ display: inline-block; line-height: 38px; color: #e6e6e6; }
+.select_list h2 p span{ font-size: 14px; margin: 0 40px; color: #666;  text-align: center; cursor: pointer;}
+.select_list h2 p span i{ display: inline-block; width: 5px; color: #FF5722; font-weight: bold; font-size: 15px; margin-right: 3px; vertical-align: top;}
+.select_list h2 a{ float: right;}
+.select_list .table{ width: 100%; }
+.select_list .table thead{ background: #f8f8f8; line-height: 40px; color: #333; border-top: 1px solid #F2F2F2; border-bottom: 1px solid #F2F2F2;}
+.select_list .table tbody{ text-align: center; line-height: 60px; color: #333; }
+.select_list .table tbody tr{border-bottom: 1px solid #F2F2F2;}
+.select_list .table tbody tr:hover{ background: #f8f8f8;}
+
+.select_list form{ display: inline-block; font-size: 14px; margin-left: 50px; color:#333;}
+.select_list form input{ display: inline-block; margin: 0 10px; width: 120px;}
+
+.supply_list{ width: 1200px; margin: 0 auto; }
+.supply_list ul li{ padding: 20px 30px; background: #f8f8f8; margin-bottom: 10px;}
+/*.supply_list ul li:hover{ box-shadow: 0px 0px 10px #ccc;}*/
+.supply_list ul li .left,.supply_list ul li .right{ display: inline-block;}
+.supply_list ul li .left p{ line-height: 30px;  color: #666;}
+.supply_list ul li .left p span{ margin-right: 25px; color: #333;}
+.supply_list ul li .left .tit span{ font-size: 22px;  color: #1E9FFF;}
+.supply_list ul li .left .tit .price{ font-size: 14px; color: #FF5722;}
+.supply_list ul li .left .tit .price i{ font-size: 22px; font-style: normal; }
+.supply_list ul li .right{ float: right; margin-top: 16px;}
+.supply_list ul li .right>p{ display: inline-block;}
+.supply_list ul li .right .release_time{ margin-right: 100px; line-height: 30px;}
+.supply_list ul li .right .release_time span{ display: block; color: #999;}
+.supply_list ul li .right .release_time span em{ font-style: normal;}
+.supply_list ul li .right .release_time .time i{background: #1E9FFF; line-height: 20px; display: inline-block; padding:0 3px; font-style: normal; border-radius: 3px; margin: 0 3px; color: #fff;}
+.supply_list ul li .right .supply_of_material{ color: #666;  width: 100px; text-align: center; line-height: 30px;}
+.supply_list ul li .right .supply_of_material a{ display: block;}

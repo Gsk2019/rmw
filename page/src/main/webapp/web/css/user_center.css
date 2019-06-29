@@ -1,0 +1,43 @@
+.wrapper{ background: #f4f4f4;}
+.content{ width:1200px; padding: 20px 0; margin: 0 auto;}
+.content h2{  font-size: 14px; color: #666;}
+.content .left_menu{ background: #fff; width: 200px; display: inline-block; margin-top: 20px; padding: 20px 0; min-height: 500px;}
+.content .left_menu ul li{ text-indent: 30px; line-height: 50px;}
+.content .left_menu ul li:hover,.content .left_menu ul .this{background: #f0f9ff; border-left: 2px solid #1E9FFF; color: #1E9FFF;}
+.content .right_content{ margin-bottom: 20px; display: inline-block; width: 940px; float: right; padding: 20px; margin-top: 20px; background: #fff;}
+.content .right_content h4{ margin-bottom: 10px; border-bottom: 1px solid #ccc; height: 40px; line-height: 40px; color: #666; font-size: 16px;}
+.content .right_content h4 a{ float:right;}
+
+.content .right_content .upload{padding:20px;}
+.layui-upload p{ margin-top: 10px;}
+#business_license,#licence,#identity_front,#identity_reverse{  width: 100px; padding: 0px; height:100px;}
+
+.table{ width:100%; text-align: center; margin-top: 10px;}
+.table thead{ line-height: 40px; background: #f4f4f4; color: #333;}
+.table thead tr th{font-weight: normal;}
+.table tbody tr td{ line-height: 40px; color: #333;}
+.table tbody tr .red{color:#FF5722;}
+
+.security{ padding:20px;}
+.security p{ padding: 20px; background: #f8f8f8; font-size: 16px; color: #666;}
+.security p i{ color: #1E9FFF; font-size: 25px; vertical-align: middle; margin-right: 5px;}
+.security ul li{ border-bottom:1px dashed #ccc; line-height: 100px;}
+.security ul li span,.security ul li em,.security ul li i{ width: 200px; display: inline-block; text-align: center; font-style: normal; color: #333;}
+.security ul li em{ color: #666;}
+.security ul li i{ color: #1E9FFF;}
+
+.change_password_content{ display: none; padding-top: 20px;}
+
+
+.content .right_content form{ 
+      width: 480px;
+    padding: 20px;}
+.content .right_content form .layui-form-label{ width: 100px; color: #666; 
+     text-align: left;}
+.content .right_content form .layui-input-block{ margin-left: 130px;}
+.content .right_content form>div{
+     padding-bottom: 15px;
+    border-bottom: 1px dashed #dcdcdc;
+     padding-right: 20px;}
+
+.layui-form-radio>i:hover, .layui-form-radioed>i{ color: #1e9fff;}

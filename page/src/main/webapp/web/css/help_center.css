@@ -1,0 +1,15 @@
+.wrapper{ background: #f8f8f8;}
+.help_center{ width: 1200px;  margin: 0 auto;}
+
+.help_center .current_location{ color: #666; line-height: 35px; padding-top: 10px;}
+
+.help_center .left{ width: 200px; float: left;}
+.help_center .left .left_menu{ background: #fff; width: 200px; display: inline-block; margin:10px 0 20px; padding: 20px 0; min-height: 500px;}
+.help_center .left .left_menu ul li{ text-indent: 30px; line-height: 50px; cursor: pointer;}
+.help_center .left .left_menu ul li:hover,.left_menu ul .this{background: #f0f9ff; border-left: 2px solid #1E9FFF; color: #1E9FFF;}
+
+.help_center .right{ width: 980px; background: #fff; margin-bottom: 20px; height: auto; display: inline-block; float: right; box-sizing: border-box; padding: 40px; margin-top: 10px;}
+.help_center .right ul li{ display: none;}
+.help_center .right ul li h2{ color: #666; font-size: 24px; color: #333;  margin-bottom: 20px;}
+.help_center .right ul li p{ font-size: 16px; color: #666; line-height: 35px;}
+.help_center .right ul li p img{  width: 800px;  margin: 10px 0;}

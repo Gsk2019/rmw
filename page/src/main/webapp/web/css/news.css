@@ -1,0 +1,67 @@
+.wrapper{ background: #F8F8F8;}
+
+.news{ width: 1200px;  margin: 0 auto;}
+.news .left{ width: 800px; display: inline-block; margin-top: 20px;}
+
+#news_banner>div p{ position: absolute; bottom: 0; line-height: 35px; display:block;  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000); background: #00000080; width: 100%; text-indent: 20px; color: #fff;}
+#news_banner .layui-carousel-ind{ text-align: right; top:-27px; padding-right: 10px; width: 790px;}
+
+.news_list{ margin: 20px 0; background: #fff;  padding-bottom: 1px;}
+.news_list ul li{padding: 20px; border-bottom: 1px dashed #ccc;}
+/*.news_list ul li img{ width: 200px; float: left; margin-right:20px;}*/
+.news_list ul li span{ overflow: hidden; display: inline-block; width: 200px; height: 133px; float: left; margin-right: 20px;}
+.news_list ul li img{ max-height: 133px; max-width: 200px;}
+.news_list ul li p{ display: inline-block; width: 540px;}
+.news_list ul li .title{ color: #333; font-size: 18px;}
+.news_list ul li .describe{ color: #666; font-size: 14px; margin-top: 10px ; margin-bottom: 10px; height: 75px;  overflow:hidden;  text-overflow:ellipsis; display:-webkit-box;  -webkit-box-orient:vertical; -webkit-line-clamp:3; line-height: 25px; }
+.news_list ul li .time{ color: #999;}
+.news_list .more{ text-align: center; margin: 20px 0;}
+
+.news .right{ width: 380px; margin: 20px 0 20px 20px; display: inline-block; float: right;}
+.news .right .industry,.news .right .quotation{ background: #fff; margin-bottom: 20px; padding-bottom: 20px;}
+.news .right .industry p,.news .right .quotation p{ text-align: center; padding-top: 10px;}
+.news .right .industry h2,.news .right .quotation h2{ color: #1E9FFF; font-size: 16px; line-height: 50px; text-indent: 20px; border-top: 2px solid;}
+.news .right .industry img,.news .right .quotation img{ width: 340px; margin-left: 20px;}
+.news .right .industry ul,.news .right .quotation ul{ width: 340px; margin-left:20px; margin-top: 10px;}
+.news .right .industry ul li,.news .right .quotation ul li{ line-height: 40px; border-bottom: 1px dashed #ccc; }
+.news .right .industry ul li a,.news .right .quotation ul li a{ color: #666; }
+.news .right .industry ul li{padding-left: 30px; position: relative; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.news .right .industry ul li:after{ position: absolute; left: 4px; top: 10px; border-radius: 20px; line-height: 20px; width: 20px; height:20px; background: #CCCCCC; text-align: center; color: #FFF;}
+.news .right .industry ul li:nth-child(1):after{ content: '1'; background: #1E9FFF;}
+.news .right .industry ul li:nth-child(2):after{ content: '2'; background: #FFB800;}
+.news .right .industry ul li:nth-child(3):after{ content: '3'; background: #FF5722;}
+.news .right .industry ul li:nth-child(4):after{ content: '4';}
+.news .right .industry ul li:nth-child(5):after{ content: '5';}
+.news .right .industry ul li:nth-child(6):after{ content: '6';}
+.news .right .industry ul li:nth-child(7):after{ content: '7';}
+.news .right .industry ul li:nth-child(8):after{ content: '8';}
+.news .right .industry ul li:nth-child(9):after{ content: '9';}
+.news .right .industry ul li:nth-child(9):after{ content: '10';}
+
+.news_content{ margin: 0 0 20px; background: #fff; padding: 20px;}
+.news_content .title{ color: #333;}
+.news_content .time{ color: #999; margin: 20px 0; border-bottom: 1px solid #efefef; padding-bottom: 20px;}
+.news_content .time span{ margin-right: 20px;}
+.news_content .time div{ display: inline-block; float: right;}
+.news_content .time div em{ float: left; font-style: normal; padding: 5px;}
+.news_content .more p{ line-height: 35px; background: #f8f8f8; color:#333; text-indent: 20px; margin-bottom: 10px;}
+.news_content .more p a{ color: #666;}
+
+.current_location{ color: #666; line-height: 35px; padding-top: 10px;}
+
+.comment{ background: #fff; margin-bottom: 20px; padding: 20px;}
+.comment .comment_title{ position: relative;}
+.comment .comment_title .border{ height: 1px; background: #c9c9c9; position: absolute; width: 100%; top: 12px;}
+.comment .comment_title h2{ text-align: center; font-size: 18px; color: #333; z-index: 1; position: relative; background: #fff; width: 70px; left: 50%; margin-left: -35px;}
+.comment .comment_reply{ margin-top: 20px; position: relative;}
+.comment .comment_reply button{ position: absolute; right: 0; top: 0; height: 100px; line-height: 20px;}
+.comment .comment_reply button i{ font-size: 20px;}
+.comment .comment_reply textarea{padding-right: 100px;}
+.comment .comment_reply p{ margin-top: 10px; color: #666;}
+.comment .comment_list{ margin-top: 20px; border-top: 1px solid #c9c9c9;}
+.comment .comment_list ul li{  border-bottom: 1px dashed #ccc; padding: 10px 0;}
+.comment .comment_list ul p{ line-height: 25px;  }
+.comment .comment_list ul .name{ color: #1E9FFF;}
+.comment .comment_list ul .time{ color: #999; float: right;}
+.comment .comment_list .more{ text-align: center; padding: 20px 0 0;}
+

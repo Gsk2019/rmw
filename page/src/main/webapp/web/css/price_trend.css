@@ -1,0 +1,30 @@
+.trend_chart{ width: 1200px; margin: 0 auto; padding: 20px 0;}
+.trend_chart .left{ background: #fff; width: 250px; margin-right: 15px; height: 365px; display: inline-block; vertical-align: top; border: 1px solid #efefef;}
+.trend_chart .left h2{ color: #1E9FFF; font-size: 16px; line-height: 35px; text-indent: 20px; padding: 10px 0 0; border-top: 2px solid;}
+.trend_chart .left p{ width: 210px; margin: 5px 20px 20px; line-height: 35px; color: #999;}
+.trend_chart .right{ background: #fff; width: 930px; display: inline-block; float: right; border: 1px solid #efefef;}
+.trend_chart .right h2{ line-height: 35px; text-indent: 25px; font-size: 16px;  margin-top: 10px; color: #1E9FFF;}
+.trend_chart .right h2 .layui-btn-group{ float: right; margin-right: 30px;}
+.trend_chart .right h2 .layui-btn-group button:hover{ color: #1E9FFF;}
+.trend_chart .right h2 .layui-btn-group .layui-btn-normal{ color:#fff; border: 0;}
+.trend_chart .right h2 .layui-btn-group .layui-btn-normal:hover{color:#fff;}
+
+#container{ width: 930px; height: 300px;  padding: 10px 0 10px;}
+.wrapper{ background: #f8f8f8;}
+
+.cycle{ width: 1200px; margin: 0 auto; padding-bottom: 20px;}
+.cycle .left{ background: #fff; width: 250px; margin-right: 15px;  height: 365px; display: inline-block; vertical-align: top; border: 1px solid #efefef;}{}
+.cycle .left h2{ color: #1E9FFF; font-size: 16px; line-height: 35px; text-indent: 20px; padding: 10px 0 0; border-top: 2px solid;}
+.cycle .left p{ width: 210px; margin: 5px 20px 0; line-height: 20px; color: #999;}
+.cycle .left h4{ text-indent: 20px; margin-top: 10px; color: #333;}
+.cycle .right{ background: #fff; width: 930px; display: inline-block; float: right; border: 1px solid #efefef;}
+.cycle .right h2{ line-height: 35px; text-indent: 25px; font-size: 16px; color: #333; margin-top: 10px; color: #1E9FFF;}
+
+.cycle .right .table{ width: 900px; margin: 15px;}
+.cycle .right .table thead{ line-height: 40px; color: #333; border-top: 1px solid #F2F2F2; border-bottom: 1px solid #F2F2F2;}
+.cycle .right .table tbody{ text-align: center; line-height: 20px; color: #333; }
+.cycle .right .table tbody tr{border-bottom: 1px solid #F2F2F2; }
+.cycle .right .table tbody tr td{padding: 10px 0;}
+.cycle .right .table tbody tr:hover{ background: #f8f8f8;}
+.cycle .right .table .bold{ font-weight: bold;}
+.cycle .right .table .green{ color: #009688;}

@@ -1,0 +1,20 @@
+.login_form_bg{ width:100%; height: 460px; background: #1577e4; }
+.login_form{ width: 1200px; background: url(../img/login_bg.jpg); height: 460px; margin: 0 auto;}
+.login_form form{ width: 300px; background: #fff; display: inline-block; padding: 50px 80px; margin: 50px; float: right;}
+.login_form form h2{ font-size: 18px; color: #333; margin-bottom: 20px;}
+.login_form form .layui-form-label{ width: 50px;}
+.login_form form .layui-form-label i{ color: #666;}
+.login_form form input{ width: 250px;}
+.login_form form button{ width: 300px;}
+.login_form form .retrieve_the_password{ padding-bottom: 10px;  text-align: right;}
+.login_form form .retrieve_the_password a{color: #999;}
+.login_form form .quick{ color: #666;}
+.login_form form .quick i{ color: #09bb07;}
+.login_form form .register{ float: right;}
+.login_form form .register i{ color: #ff5722; font-style: normal;}
+
+.content{ border-top: 1px solid #eee; font-size: 14px;}
+.content>div{ width:1200px; margin: 40px auto; padding: 40px; box-sizing: border-box; background: #fff; box-shadow: 0 0 10px #ccc;}
+.content h2{ text-align: center; font-size: 16px; color: #666; font-weight: bold; margin-bottom: 30px;}
+.content p{ text-align: left; font-size: 14px; color: #666; line-height: 25px; text-indent: 2em;}
+.content h4{ text-align: left; font-size: 14px; color: #666; font-weight: bold; text-indent: 2em; margin-top: 30px;}
